@@ -31,19 +31,19 @@
     ]
   },
   {
-    "title": "Teaching Experience",
+    "title": "Industrial Experience",
     "entries": [
       {
-        "title": "Teaching Assistant",
-        "organization": "Example University",
-        "dates": "Jan 2025 - May 2025",
+        "title": "Aircraft Engine Mechanic",
+        "organization": "Indian Air Force",
+        "dates": "Sep 2005 - May 2015",
         "logo": "assets/images/institution-placeholder.svg",
         "logo_alt": "Example University logo placeholder",
-        "flag": "GB-ENG",
+        "flag": "GB-IN",
         "flag_alt": "Country flag",
         "bullets": [
-          "Assisted with Example Course: Introduction to the Subject.",
-          "Led tutorials and provided feedback on coursework."
+          "Maintenance engineering of aircraft engines of Russian Origin.",
+          "Post flight data analysis"
         ]
       }
     ]

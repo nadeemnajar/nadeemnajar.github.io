@@ -29,7 +29,7 @@
   },
   "profile_image": "assets/images/profile-placeholder.svg",
   "profile_image_alt": "Jane Doe profile photo placeholder",
-  "bio_html": "Jane is a doctoral researcher in Example Department at Example University. Her research focuses on an interesting research area and its applications to real-world problems. Previously, Jane completed a master's degree in Example Subject and a bachelor's degree in Example Subject. Replace this paragraph with your own biography in <code>content/site.json</code>.",
+  "bio_html": "I am Nadeem Akbar Najar, a mechanical engineer and public policy researcher from Kashmir, working at the intersection of engineering, policy, and economics in winter road maintenance. My work examines snow-clearance operations through three lenses: technical efficiency of machinery, governance structures and budget allocations, and cost-benefit economics of infrastructure decisions.</code>.",
   "contact": [
     "jane [dot] doe [at] example [dot] edu",
     "Example Department, Example University, City, Country"

@@ -36,9 +36,9 @@
   ],
   "social_links": [
     { "label": "University profile", "url": "https://example.edu/your-profile", "image": "assets/images/institution-placeholder.svg", "image_class": "institution-logo", "image_alt": "Institution logo placeholder" },
-    { "label": "Google Scholar", "url": "https://scholar.google.com/", "icon": "fa-brands fa-google-scholar" },
-    { "label": "LinkedIn", "url": "https://www.linkedin.com/", "icon": "fa-brands fa-linkedin" },
-    { "label": "GitHub", "url": "https://github.com/your-username", "icon": "fa-brands fa-square-github" },
+    { "label": "Google Scholar", "url": "https://scholar.google.com/citations?user=Wle1BcEAAAAJ&hl=en" },
+    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/nadeem-najar-ceng-pe-7402a6297/" },
+    { "label": "GitHub", "url": "https://nadeemnajar.github.io/", "icon": "fa-brands fa-square-github" },
     { "label": "ORCID", "url": "https://orcid.org/", "icon": "fa-brands fa-orcid" }
   ]
 }

@@ -46,6 +46,19 @@
           "Post flight data analysis"
         ]
       }
+       {
+        "title": "Aircraft Engine Mechanic",
+        "organization": "Indian Air Force",
+        "dates": "Sep 2005 - May 2015",
+        "logo": "assets/images/institution-placeholder.svg",
+        "logo_alt": "Example University logo placeholder",
+        "flag": "IN",
+        "flag_alt": "Country flag",
+        "bullets": [
+          "Maintenance engineering of aircraft engines of Russian Origin.",
+          "Post flight data analysis"
+        ]
+      }
     ]
   },
   {

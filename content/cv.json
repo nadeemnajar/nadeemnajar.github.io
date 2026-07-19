@@ -16,15 +16,15 @@
         ]
       },
       {
-        "title": "Research Assistant",
-        "organization": "Example Research Institute",
-        "dates": "Jun 2023 - Aug 2024",
+        "title": "Junior Research Fellow",
+        "organization": "National Institute of Technology Srinagar",
+        "dates": "Aug 2015 - Sep 2016",
         "logo": "assets/images/institution-placeholder.svg",
         "logo_alt": "Example Research Institute logo placeholder",
         "flag": "IN",
         "flag_alt": "Country flag",
         "bullets": [
-          "Supported an interdisciplinary research project.",
+          "Studied an Magnetorheological Fluids, Isogeometric Analysis, Structural Aspects of Coronary Stents.",
           "Analysed data and contributed to a peer-reviewed manuscript."
         ]
       }

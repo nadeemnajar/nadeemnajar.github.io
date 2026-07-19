@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services – Chartered Mechanical Engineer</title>
+  <meta name="description" content="Chartered Engineer (Mechanical) services: consultancy, design, analysis, and project management.">
+  <!-- Font Awesome 6 (free) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <!-- Main stylesheet (matching your site) -->
+  <link rel="stylesheet" href="../site/styles.css">
+  <!-- Optional: inline tweaks to keep services card consistent -->
+  <style>
+    /* subtle extra polish, inherits from site styles */
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0 1rem;
+    }
+    .service-card {
+      background: var(--bg-card, #ffffff);
+      padding: 1.8rem 1.5rem;
+      border-radius: 1.2rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.03), 0 2px 6px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      border: 1px solid var(--border-light, #eaeef2);
+    }
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 32px rgba(0,0,0,0.06);
+    }
+    .service-card i {
+      font-size: 2.2rem;
+      color: var(--accent, #1e5f8e);
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+    .service-card h3 {
+      font-size: 1.4rem;
+      margin: 0.5rem 0 0.75rem;
+      font-weight: 600;
+    }
+    .service-card p {
+      font-size: 0.98rem;
+      line-height: 1.6;
+      color: var(--text-muted, #3a4a5a);
+      margin-bottom: 0.2rem;
+    }
+    .service-card .badge {
+      display: inline-block;
+      background: var(--accent-soft, #d9e6f2);
+      color: var(--accent-dark, #0a3147);
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.2rem 0.8rem;
+      border-radius: 20px;
+      margin-top: 0.5rem;
+      letter-spacing: 0.3px;
+    }
+    .service-cta {
+      margin-top: 2.5rem;
+      padding: 1.8rem 2rem;
+      background: var(--bg-soft, #f4f8fc);
+      border-radius: 2rem;
+      text-align: center;
+      border: 1px solid var(--border-light, #dfe7ef);
+    }
+    .service-cta h2 {
+      font-size: 1.6rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+    .service-cta p {
+      font-size: 1.05rem;
+      max-width: 600px;
+      margin: 0 auto 1.2rem;
+      color: var(--text-muted, #2d4055);
+    }
+    .btn {
+      display: inline-block;
+      background: var(--accent, #1e5f8e);
+      color: white;
+      padding: 0.7rem 2rem;
+      border-radius: 40px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: background 0.2s;
+      border: none;
+      font-size: 1rem;
+    }
+    .btn:hover {
+      background: var(--accent-dark, #0f3b5a);
+      color: white;
+    }
+    .btn i {
+      margin-right: 0.5rem;
+    }
+    /* keep hero & container consistent with existing site */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+    .hero .tag {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.8rem;
+      opacity: 0.7;
+      margin-bottom: 0.2rem;
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: 600;
+      margin: 0.2rem 0 0.2rem;
+    }
+    .project-list {
+      margin: 1rem 0 2rem;
+    }
+    /* responsive */
+    @media (max-width: 600px) {
+      .service-grid { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 2.2rem; }
+    }
+  </style>
+</head>
+<body>
+  <!-- topbar: matches your data-site-nav (same as projects page) -->
+  <nav class="topbar" data-site-nav></nav>
+
+  <!-- hero header -->
+  <header class="hero">
+    <div class="container">
+      <p class="tag"><i class="fas fa-cog" style="margin-right: 6px;"></i> Services</p>
+      <h1>Chartered Engineer (Mechanical)</h1>
+      <p style="font-size: 1.2rem; margin-top: 0.3rem; opacity: 0.8;">Expertise across design, analysis, and project delivery</p>
+    </div>
+  </header>
+
+  <!-- main content -->
+  <main class="container">
+    <!-- service grid -->
+    <section class="project-list" id="servicesList" aria-live="polite">
+      <div class="service-grid">
+        <!-- Card 1 -->
+        <div class="service-card">
+          <i class="fas fa-drafting-compass"></i>
+          <h3>Mechanical Design &amp; CAD</h3>
+          <p>Concept development, 3D modelling, and detailed engineering drawings. Compliance with BS, ISO, and ASME standards.</p>
+          <span class="badge">SolidWorks &bull; AutoCAD</span>
+        </div>
+        <!-- Card 2 -->
+        <div class="service-card">
+          <i class="fas fa-calculator"></i>
+          <h3>Structural &amp; Thermal Analysis</h3>
+          <p>FEA, CFD, and hand calculations for stress, fatigue, heat transfer, and fluid flow. Optimisation for performance and safety.</p>
+          <span class="badge">ANSYS &bull; MathCAD</span>
+        </div>
+        <!-- Card 3 -->
+        <div class="service-card">
+          <i class="fas fa-industry"></i>
+          <h3>Project Engineering &amp; Management</h3>
+          <p>From feasibility to commissioning. Risk assessment, procurement support, site supervision, and technical documentation.</p>
+          <span class="badge">PRINCE2 &bull; Agile</span>
+        </div>
+        <!-- Card 4 -->
+        <div class="service-card">
+          <i class="fas fa-chart-line"></i>
+          <h3>Reliability &amp; Maintenance</h3>
+          <p>RCM, FMEA, condition monitoring, and lifecycle cost analysis. Improve uptime and reduce unplanned downtime.</p>
+          <span class="badge">RCM &bull; CMMS</span>
+        </div>
+        <!-- Card 5 -->
+        <div class="service-card">
+          <i class="fas fa-leaf"></i>
+          <h3>Sustainable Energy Systems</h3>
+          <p>Renewable integration, energy audits, heat pump systems, and carbon reduction strategies. CHP &amp; HVAC optimisation.</p>
+          <span class="badge">Energy &bull; Net-Zero</span>
+        </div>
+        <!-- Card 6 -->
+        <div class="service-card">
+          <i class="fas fa-gavel"></i>
+          <h3>Expert Witness &amp; Due Diligence</h3>
+          <p>Technical audits, failure investigation, and litigation support. Independent assessment for insurance, legal, and regulatory bodies.</p>
+          <span class="badge">Forensic &bull; Compliance</span>
+        </div>
+      </div>
+
+      <!-- additional CTA / contact block -->
+      <div class="service-cta">
+        <h2><i class="fas fa-handshake" style="margin-right: 10px;"></i> Let’s discuss your project</h2>
+        <p>I provide independent, chartered engineering services tailored to your needs. From design review to full project delivery.</p>
+        <a href="#" class="btn"><i class="fas fa-envelope"></i> Get in touch</a>
+        <span style="display: inline-block; margin-left: 1.2rem; font-size: 0.9rem; opacity: 0.7;">
+          <i class="fas fa-phone-alt" style="margin-right: 4px;"></i> +44 (0) 1234 567890
+        </span>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer (same as projects page) -->
+  <footer class="site-footer" data-site-footer></footer>
+
+  <!-- scripts: global site script + (no projects.js needed) but we keep your pattern -->
+  <script src="../site/script.js"></script>
+  <!-- services.js is optional; we keep all logic inside this page, but you can add services.js if needed -->
+  <!-- <script src="../site/services.js"></script> -->
+  <script>
+    (function() {
+      // If you want to keep the same dynamic nav & footer as projects page,
+      // the existing site script (../site/script.js) should handle data-site-nav and data-site-footer.
+      // But in case it doesn't, we provide a minimal fallback to show nav/footer.
+      // This also ensures that the page works standalone with your site structure.
+      function initNavFooter() {
+        const nav = document.querySelector('[data-site-nav]');
+        const footer = document.querySelector('[data-site-footer]');
+        // If they are empty and you have a standard structure, you can inject simple markup
+        // or rely on script.js. This is just a safeguard.
+        if (nav && !nav.innerHTML.trim()) {
+          nav.innerHTML = `
+            <div class="container" style="display:flex; justify-content:space-between; align-items:center; padding:0.7rem 0;">
+              <div style="font-weight:600; font-size:1.2rem;"><i class="fas fa-cogs" style="margin-right:8px;"></i>CEng Mech</div>
+              <div style="display:flex; gap:1.8rem;">
+                <a href="#" style="text-decoration:none; color:inherit;">Home</a>
+                <a href="#" style="text-decoration:none; color:inherit;">Projects</a>
+                <a href="#" style="text-decoration:none; color:inherit; font-weight:500;">Services</a>
+                <a href="#" style="text-decoration:none; color:inherit;">Contact</a>
+              </div>
+            </div>
+          `;
+        }
+        if (footer && !footer.innerHTML.trim()) {
+          footer.innerHTML = `
+            <div class="container" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; padding:1.8rem 0; border-top:1px solid #dce4ec; margin-top:1.5rem;">
+              <span style="opacity:0.7;">&copy; 2026 · Chartered Mechanical Engineer</span>
+              <span style="opacity:0.7;">
+                <i class="fab fa-linkedin" style="margin-right:12px;"></i>
+                <i class="fab fa-github" style="margin-right:12px;"></i>
+                <i class="fab fa-x-twitter"></i>
+              </span>
+            </div>
+          `;
+        }
+      }
+      // wait for DOM
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initNavFooter);
+      } else {
+        initNavFooter();
+      }
+    })();
+  </script>
+  <!-- optional: if you have a projects.js that adds dynamic list, we skip it here (services are static) -->
+</body>
+</html>

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "service-mechanical-design",
+    "title": "Mechanical Design & CAD",
+    "summary": "Concept development, 3D modelling, and detailed engineering drawings. Compliance with BS, ISO, and ASME standards.",
+    "icon": "fa-drafting-compass",
+    "badge": "SolidWorks • AutoCAD",
+    "url": "pages/services/service-mechanical-design.html"
+  },
+  {
+    "id": "service-structural-analysis",
+    "title": "Structural & Thermal Analysis",
+    "summary": "FEA, CFD, and hand calculations for stress, fatigue, heat transfer, and fluid flow. Optimisation for performance and safety.",
+    "icon": "fa-calculator",
+    "badge": "ANSYS • MathCAD",
+    "url": "pages/services/service-structural-analysis.html"
+  },
+  {
+    "id": "service-project-management",
+    "title": "Project Engineering & Management",
+    "summary": "From feasibility to commissioning. Risk assessment, procurement support, site supervision, and technical documentation.",
+    "icon": "fa-industry",
+    "badge": "PRINCE2 • Agile",
+    "url": "pages/services/service-project-management.html"
+  },
+  {
+    "id": "service-reliability-maintenance",
+    "title": "Reliability & Maintenance",
+    "summary": "RCM, FMEA, condition monitoring, and lifecycle cost analysis. Improve uptime and reduce unplanned downtime.",
+    "icon": "fa-chart-line",
+    "badge": "RCM • CMMS",
+    "url": "pages/services/service-reliability-maintenance.html"
+  },
+  {
+    "id": "service-sustainable-energy",
+    "title": "Sustainable Energy Systems",
+    "summary": "Renewable integration, energy audits, heat pump systems, and carbon reduction strategies. CHP & HVAC optimisation.",
+    "icon": "fa-leaf",
+    "badge": "Energy • Net-Zero",
+    "url": "pages/services/service-sustainable-energy.html"
+  },
+  {
+    "id": "service-expert-witness",
+    "title": "Expert Witness & Due Diligence",
+    "summary": "Technical audits, failure investigation, and litigation support. Independent assessment for insurance, legal, and regulatory bodies.",
+    "icon": "fa-gavel",
+    "badge": "Forensic • Compliance",
+    "url": "pages/services/service-expert-witness.html"
+  }
+]

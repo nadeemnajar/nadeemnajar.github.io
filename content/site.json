@@ -35,10 +35,10 @@
     "Public Works (R&B) Department, Jammu and Kashmir"
   ],
   "social_links": [
-    { "label": "University profile", "url": "https://example.edu/your-profile", "image": "assets/images/institution-placeholder.svg", "image_class": "institution-logo", "image_alt": "Institution logo placeholder" },
-    { "label": "Google Scholar", "url": "https://scholar.google.com/citations?user=Wle1BcEAAAAJ&hl=en" },
-    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/nadeem-najar-ceng-pe-7402a6297/" },
+    { "label": "University profile", "url": "https://www.cps.iitb.ac.in/student/nadeem-akbar-najar/", "image": "assets/images/institution-placeholder.svg", "image_class": "institution-logo", "image_alt": "Institution logo placeholder" },
+    { "label": "Google Scholar", "url": "https://scholar.google.com/citations?user=Wle1BcEAAAAJ&hl=en", "icon": "fa-brands fa-google-scholar" },
+    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/nadeem-najar-ceng-pe-7402a6297/", "icon": "fa-brands fa-linkedin" },
     { "label": "GitHub", "url": "https://nadeemnajar.github.io/", "icon": "fa-brands fa-square-github" },
-    { "label": "ORCID", "url": "https://orcid.org/", "icon": "fa-brands fa-orcid" }
+    { "label": "ORCID", "url": "https://orcid.org/0000-0002-6165-5903", "icon": "fa-brands fa-orcid" }
   ]
 }

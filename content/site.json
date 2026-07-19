@@ -27,7 +27,7 @@
     "news.html": { "title": "News", "description": "Latest news and updates from Jane Doe." },
     "cv.html": { "title": "CV", "description": "Curriculum Vitae of Jane Doe." }
   },
-  "profile_image": "assets/images/profile-placeholder.svg",
+  "profile_image": "assets/images/nadspp.PNG",
   "profile_image_alt": "Jane Doe profile photo placeholder",
   "bio_html": "I am Nadeem Akbar Najar, a mechanical engineer and public policy researcher from Kashmir, working at the intersection of engineering, policy, and economics in winter road maintenance. My work examines snow-clearance operations through three lenses: technical efficiency of machinery, governance structures and budget allocations, and cost-benefit economics of infrastructure decisions.</code>.",
   "contact": [

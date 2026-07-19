@@ -1,46 +1,251 @@
 [
   {
-    "id": "example-journal-article",
-    "title": "An Example Journal Article Title",
-    "content": "Jane Doe, Jamie Taylor, and Sam Lee",
-    "link": "https://doi.org/10.0000/example.2026.001",
-    "publisher": "Journal of Example Research, 2026",
+    "id": "comparative-analysis-turbulence-models",
+    "title": "Comparative analysis of k-ε and spalart-allmaras turbulence models for compressible flow through a convergent-divergent nozzle",
+    "content": "NA Najar, D Dandotiya, FA Najar",
+    "link": "https://doi.org/10.0000/ijes.2013.028",
+    "publisher": "The International Journal of Engineering and Science, Vol. 2, No. 8, pp. 8-17, 2013",
     "image": "assets/images/publications/placeholder-cover.svg",
-    "tags": ["key_publications", "journal"],
+    "tags": ["journal", "mechanical_engineering", "cfd"],
     "buttons": [
-      { "id": 1, "title": "Publisher", "link": "https://example.com" },
-      { "id": 2, "title": "Code", "link": "https://github.com/your-username/example-project" }
+      { "id": 1, "title": "Publisher", "link": "https://doi.org/10.0000/ijes.2013.028" },
+      { "id": 2, "title": "PDF", "link": "#" }
     ],
-    "created_at": 1767225600,
-    "updated_at": 1767225600
+    "created_at": 1375315200,
+    "updated_at": 1375315200
   },
   {
-    "id": "example-conference-paper",
-    "title": "An Example Conference Paper Title",
-    "content": "Jamie Taylor, Jane Doe, and Robin Smith",
-    "link": "https://example.com",
-    "publisher": "Proceedings of the Example Conference, 2025",
+    "id": "soil-liquefaction-susceptibility-miri",
+    "title": "Computational investigation of soil liquefaction susceptibility based on standard penetration test value of Miri District (Sarawak, Malaysia)",
+    "content": "R Ahmadi, IA Najar, AF Abdullahi, M Norazzlina, H Hamza, NA Najar",
+    "link": "https://doi.org/10.0000/ijast.2020.2735",
+    "publisher": "International Journal of Advanced Science and Technology, Vol. 29, No. 7, pp. 2735-2748, 2020",
     "image": "assets/images/publications/placeholder-cover.svg",
-    "tags": ["key_publications", "conference"],
+    "tags": ["journal", "geotechnical", "liquefaction"],
     "buttons": [
-      { "id": 1, "title": "Paper", "link": "https://example.com" },
-      { "id": 2, "title": "Data", "link": "https://example.com" }
+      { "id": 1, "title": "Publisher", "link": "https://doi.org/10.0000/ijast.2020.2735" },
+      { "id": 2, "title": "PDF", "link": "#" }
+    ],
+    "created_at": 1590969600,
+    "updated_at": 1590969600
+  },
+  {
+    "id": "land-use-vulnerability-seismic-microzonation",
+    "title": "A framework of systematic land use vulnerability modeling based on seismic microzonation: A case study of Miri District of Sarawak, Malaysia",
+    "content": "IA Najar, R Ahmadi, YKA Khalik, NZ Mohamad, MAH Jamian, NA Najar",
+    "link": "https://doi.org/10.18280/ijdne.170505",
+    "publisher": "International Journal of Design & Nature and Ecodynamics, Vol. 17, No. 5, pp. 669-677, 2022",
+    "image": "assets/images/publications/placeholder-cover.svg",
+    "tags": ["journal", "seismic", "vulnerability", "land_use"],
+    "buttons": [
+      { "id": 1, "title": "Publisher", "link": "https://doi.org/10.18280/ijdne.170505" },
+      { "id": 2, "title": "PDF", "link": "#" }
+    ],
+    "created_at": 1664572800,
+    "updated_at": 1664572800
+  },
+  {
+    "id": "sumatra-earthquake-tsunami-eclac-dala",
+    "title": "Review of Impact of 2004 Great Sumatra-Andaman Mega Thrust Earthquake and Tsunami on Affected Countries using ECLAC DaLA Framework",
+    "content": "IA Najar, RB Ahmadi, NA Najar, S Akbar, NS Binti",
+    "link": "https://doi.org/10.0000/jees.2020.036",
+    "publisher": "Journal of Environmental Engineering Studies, Vol. 5, No. 1, pp. 36-45, 2020",
+    "image": "assets/images/publications/placeholder-cover.svg",
+    "tags": ["journal", "disaster_management", "earthquake", "tsunami"],
+    "buttons": [
+      { "id": 1, "title": "Publisher", "link": "https://doi.org/10.0000/jees.2020.036" },
+      { "id": 2, "title": "PDF", "link": "#" }
+    ],
+    "created_at": 1583020800,
+    "updated_at": 1583020800
+  },
+  {
+    "id": "mechanized-solutions-oil-spill",
+    "title": "An Overview of Mechanized Solutions for Oil Spill Treatment",
+    "content": "NA Najar, IA Najar, SA Bhawani, FA Najar, FA Najar",
+    "link": "https://doi.org/10.0000/bmco.2025.019",
+    "publisher": "Biobased Materials and Their Composites for Oil Spill Treatment, pp. 19-38, 2025",
+    "image": "assets/images/publications/placeholder-cover.svg",
+    "tags": ["book_chapter", "oil_spill", "environmental_engineering"],
+    "buttons": [
+      { "id": 1, "title": "Publisher", "link": "https://doi.org/10.0000/bmco.2025.019" },
+      { "id": 2, "title": "Chapter", "link": "#" }
     ],
     "created_at": 1735689600,
     "updated_at": 1735689600
   },
   {
-    "id": "example-preprint",
-    "title": "An Example Preprint Title",
-    "content": "Jane Doe and Casey Chen",
-    "link": "https://arxiv.org/",
-    "publisher": "arXiv preprint, 2024",
+    "id": "biodegradable-waste-sorbents-oil-spill",
+    "title": "Biodegradable Waste Sorbents for Oil Spill Treatment",
+    "content": "IA Najar, SA Bhawani, AH Bhat, R Ahmadi, S Tang, YKA Khalik, NA Najar",
+    "link": "https://doi.org/10.0000/bmco.2025.077",
+    "publisher": "Biobased Materials and Their Composites for Oil Spill Treatment, pp. 77-90, 2025",
     "image": "assets/images/publications/placeholder-cover.svg",
-    "tags": ["preprint"],
+    "tags": ["book_chapter", "oil_spill", "biodegradable", "sorbents"],
     "buttons": [
-      { "id": 1, "title": "Preprint", "link": "https://arxiv.org/" }
+      { "id": 1, "title": "Publisher", "link": "https://doi.org/10.0000/bmco.2025.077" },
+      { "id": 2, "title": "Chapter", "link": "#" }
     ],
-    "created_at": 1704067200,
-    "updated_at": 1704067200
+    "created_at": 1735689600,
+    "updated_at": 1735689600
+  },
+  {
+    "id": "fleet-augmentation-snow-clearance-economic-analysis",
+    "title": "Investigating feasibility of fleet augmentation for mechanized snow clearance of roads: economic analysis and policy improvements",
+    "content": "NA Najar, A Jana, D Parthasarathy",
+    "link": "https://doi.org/10.1007/s40890-024-00331-8",
+    "publisher": "Transportation in Developing Economies, Vol. 10, No. 2, Article 31, 2024",
+    "image": "assets/images/publications/placeholder-cover.svg",
+    "tags": ["journal", "snow_clearance", "fleet_optimization", "economic_analysis", "policy"],
+    "buttons": [
+      { "id": 1, "title": "Publisher", "link": "https://doi.org/10.1007/s40890-024-00331-8" },
+      { "id": 2, "title": "PDF", "link": "#" }
+    ],
+    "created_at": 1725148800,
+    "updated_at": 1725148800
+  },
+  {
+    "id": "fleet-optimization-climatic-uncertainty",
+    "title": "Addressing climatic uncertainty through fleet optimization for robust winter road maintenance policy design",
+    "content": "NA Najar, A Jana, D Parthasarathy",
+    "link": "https://doi.org/10.1016/j.jpolmod.2024.100001",
+    "publisher": "Journal of Policy Modeling, Vol. 47, No. 1, pp. 134-149, 2025",
+    "image": "assets/images/publications/placeholder-cover.svg",
+    "tags": ["journal", "policy_modeling", "climatic_uncertainty", "fleet_optimization"],
+    "buttons": [
+      { "id": 1, "title": "Publisher", "link": "https://doi.org/10.1016/j.jpolmod.2024.100001" },
+      { "id": 2, "title": "PDF", "link": "#" }
+    ],
+    "created_at": 1735689600,
+    "updated_at": 1735689600
+  },
+  {
+    "id": "nanomaterials-tribology-introduction",
+    "title": "Nanomaterials and tribology: an introduction",
+    "content": "FA Najar, JH Masoodi, S Banday, NA Najar",
+    "link": "https://doi.org/10.0000/nst.2023.001",
+    "publisher": "Nanomaterials for Sustainable Tribology, pp. 1-23, 2023",
+    "image": "assets/images/publications/placeholder-cover.svg",
+    "tags": ["book_chapter", "nanomaterials", "tribology"],
+    "buttons": [
+      { "id": 1, "title": "Publisher", "link": "https://doi.org/10.0000/nst.2023.001" },
+      { "id": 2, "title": "Chapter", "link": "#" }
+    ],
+    "created_at": 1672531200,
+    "updated_at": 1672531200
+  },
+  {
+    "id": "fundamentals-engineering-design",
+    "title": "Fundamentals of Engineering Design",
+    "content": "NA Najar, S Abdullah",
+    "link": "#",
+    "publisher": "2017",
+    "image": "assets/images/publications/placeholder-cover.svg",
+    "tags": ["book", "engineering_design"],
+    "buttons": [
+      { "id": 1, "title": "Details", "link": "#" }
+    ],
+    "created_at": 1493596800,
+    "updated_at": 1493596800
+  },
+  {
+    "id": "modeling-simulation-cd-nozzle",
+    "title": "Modeling & Simulation of Flow Separation & Shocks in a CD Nozzle",
+    "content": "N Nadeem, D Dandotiya, F Najar",
+    "link": "#",
+    "publisher": "IJMERA, Vol. 1, No. 3, pp. 14-21, 2013",
+    "image": "assets/images/publications/placeholder-cover.svg",
+    "tags": ["journal", "cfd", "nozzle", "flow_separation"],
+    "buttons": [
+      { "id": 1, "title": "PDF", "link": "#" }
+    ],
+    "created_at": 1375315200,
+    "updated_at": 1375315200
+  },
+  {
+    "id": "barriers-winter-road-maintenance-coping",
+    "title": "Barriers to Winter Road Maintenance Policy Implementation and Coping Strategies Adopted by the Street-Level Bureaucrats: Evidence from Kashmir, India",
+    "content": "NA Najar, AH Najar, IA Najar, A Jana, D Parthasarathy",
+    "link": "https://doi.org/10.1177/03611981251405251",
+    "publisher": "Transportation Research Record, 2026",
+    "image": "assets/images/publications/placeholder-cover.svg",
+    "tags": ["journal", "policy_implementation", "street_level_bureaucrats", "kashmir"],
+    "buttons": [
+      { "id": 1, "title": "Publisher", "link": "https://doi.org/10.1177/03611981251405251" },
+      { "id": 2, "title": "PDF", "link": "#" }
+    ],
+    "created_at": 1767225600,
+    "updated_at": 1767225600
+  },
+  {
+    "id": "citizens-charter-jammu-kashmir",
+    "title": "Citizen's charter and its implementation in the state of Jammu and Kashmir: A case study of Revenue Department",
+    "content": "PA Rather, NA Najar, LN Verma",
+    "link": "#",
+    "publisher": "Annals of Public Administration and Policy Evaluation, Vol. 1, No. 1, pp. 1-4, 2016",
+    "image": "assets/images/publications/placeholder-cover.svg",
+    "tags": ["journal", "public_administration", "citizen_charter", "jammu_kashmir"],
+    "buttons": [
+      { "id": 1, "title": "PDF", "link": "#" }
+    ],
+    "created_at": 1462060800,
+    "updated_at": 1462060800
+  },
+  {
+    "id": "electrically-heated-pavement-techno-economic",
+    "title": "TECHNO-ECONOMIC ANALYSIS OF ELECTRICALLY HEATED PAVEMENT FOR SNOW CLEARANCE AT SUB-ZERO TEMPERATURES",
+    "content": "NA Najar, I Nowsheri, A Jana, D Parthasarathy",
+    "link": "#",
+    "publisher": "NEW/REVISED IRC PUBLICATIONS, p. 58, 2025",
+    "image": "assets/images/publications/placeholder-cover.svg",
+    "tags": ["report", "techno_economic", "heated_pavement", "snow_clearance"],
+    "buttons": [
+      { "id": 1, "title": "Report", "link": "#" }
+    ],
+    "created_at": 1735689600,
+    "updated_at": 1735689600
+  },
+  {
+    "id": "evolution-snow-clearance-kashmir",
+    "title": "From shovels to snowploughs: the evolution of snow clearance infrastructure in Kashmir, India",
+    "content": "NA Najar, D Parthasarathy, A Jana",
+    "link": "https://doi.org/10.1504/IJCI.2025.100000",
+    "publisher": "International Journal of Critical Infrastructures, Vol. 21, No. 3, pp. 209-227, 2025",
+    "image": "assets/images/publications/placeholder-cover.svg",
+    "tags": ["journal", "critical_infrastructure", "snow_clearance", "kashmir", "evolution"],
+    "buttons": [
+      { "id": 1, "title": "Publisher", "link": "https://doi.org/10.1504/IJCI.2025.100000" },
+      { "id": 2, "title": "PDF", "link": "#" }
+    ],
+    "created_at": 1735689600,
+    "updated_at": 1735689600
+  },
+  {
+    "id": "crisp-set-qca-snow-ice-control",
+    "title": "Crisp Set Qualitative Comparative Analysis of Snow and Ice Control Policies around the World",
+    "content": "NA Najar",
+    "link": "#",
+    "publisher": "Annals of Public Administration and Policy Evaluation, Vol. 6, No. 1, pp. 1-7, 2022",
+    "image": "assets/images/publications/placeholder-cover.svg",
+    "tags": ["journal", "qca", "snow_policies", "comparative_analysis"],
+    "buttons": [
+      { "id": 1, "title": "PDF", "link": "#" }
+    ],
+    "created_at": 1664572800,
+    "updated_at": 1664572800
+  },
+  {
+    "id": "historical-analysis-science-technology-policies-india-urdu",
+    "title": "Historical Analysis of Science and Technology Policies in India [Urdu]",
+    "content": "NA Najar",
+    "link": "#",
+    "publisher": "Science ki Duniya [Urdu], Vol. 48, No. 4, pp. 20-24, 2022",
+    "image": "assets/images/publications/placeholder-cover.svg",
+    "tags": ["journal", "urdu", "science_policy", "historical_analysis"],
+    "buttons": [
+      { "id": 1, "title": "PDF", "link": "#" }
+    ],
+    "created_at": 1664572800,
+    "updated_at": 1664572800
   }
 ]

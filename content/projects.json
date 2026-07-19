@@ -1,7 +1,7 @@
 [
   {
     "id": "project-example-one",
-    "title": "Example Research Project",
+    "title": "Technoeconomic Analysis of Mechanized Multilevel Car Parking for Hospital Setting in Kashmir",
     "summary": "A concise description of the research question, method, and intended impact of this project.",
     "image": "assets/images/project-placeholder.svg",
     "image_alt": "Example Research Project placeholder image",
@@ -9,7 +9,7 @@
   },
   {
     "id": "project-example-two",
-    "title": "Example Collaborative Project",
+    "title": "Economic Feasibility of Replacement of Traditional Central Heating System with Heat Pumps in a Hospital Setting",
     "summary": "A second example showing how to describe collaborative or interdisciplinary research.",
     "image": "assets/images/project-placeholder.svg",
     "image_alt": "Example Collaborative Project placeholder image",

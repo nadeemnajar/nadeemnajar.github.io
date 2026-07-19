@@ -52,18 +52,18 @@
     "title": "Education",
     "entries": [
       {
-        "title": "Doctor of Philosophy (PhD), Example Subject",
-        "organization": "Example University",
-        "dates": "2024 - Present",
+        "title": "Doctor of Philosophy (PhD), Winter Road Maintenance",
+        "organization": "IIT Bombay",
+        "dates": "2020 - Present",
         "logo": "assets/images/institution-placeholder.svg",
         "logo_alt": "Example University logo placeholder",
         "flag": "IN",
         "flag_alt": "Country flag"
       },
       {
-        "title": "Master of Science, Example Subject",
-        "organization": "Example University",
-        "dates": "2022 - 2023",
+        "title": "Master of Technology, Thermal System and Design",
+        "organization": "RGTU Bhopal",
+        "dates": "2011 - 2013",
         "logo": "assets/images/institution-placeholder.svg",
         "logo_alt": "Example University logo placeholder",
         "flag": "IN",

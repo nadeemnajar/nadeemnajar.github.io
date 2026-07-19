@@ -18,14 +18,16 @@
     { "label": "Projects", "path": "pages/projects.html" },
     { "label": "Publications", "path": "pages/publications.html" },
     { "label": "News", "path": "pages/news.html" },
-    { "label": "CV", "path": "pages/cv.html" }
+    { "label": "CV", "path": "pages/cv.html" },
+    { "label": "Services", "path": "pages/services.html" }
   ],
   "pages": {
     "index.html": { "title": "", "description": "Academic website of Nadeem Akbar Najar." },
     "projects.html": { "title": "Projects", "description": "Research projects by Nadeem Akbar Najar." },
     "publications.html": { "title": "Publications", "description": "Publications by Nadeem Akbar Najar." },
     "news.html": { "title": "News", "description": "Latest news and updates from Nadeem Akbar Najar." },
-    "cv.html": { "title": "CV", "description": "Curriculum Vitae of Nadeem Akbar Najar." }
+    "cv.html": { "title": "CV", "description": "Curriculum Vitae of Nadeem Akbar Najar." },
+    "cv.html": { "title": "Services", "description": "Chartered Engineer Services by Nadeem Akbar Najar." }
   },
   "profile_image": "assets/images/nadspp.PNG",
   "profile_image_alt": "Jane Doe profile photo placeholder",

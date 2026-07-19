@@ -1,6 +1,6 @@
 [
   {
-    "date": "2026-06-15",
+   "date": "2026-06-15",
     "text": "Our work in the domain of WRM has been cited by the target department- PW(R&B) Department.",
     "image": "",
     "gif": "",
@@ -8,14 +8,19 @@
     "url_label": "Jammu and Kashmir Winter Road Maintenance, Snow Clearance and Ice Management Policy, 2026"
   },
   {
-    "date": "2026-03-10",
+    "date": "2025-07-01",
     "text": "Our work got published in government publication- Indian Highways published by Indian Road Congress.",
     "image": "",
-    "gif": ""
-  {
-    "date": "2026-01-08",
-    "text": "Jane joined Example University as a doctoral researcher.",
+    "gif": "",
+    "url": "https://www.researchgate.net/publication/393449419_TECHNO-ECONOMIC_ANALYSIS_OF_ELECTRICALLY_HEATED_PAVEMENT_FOR_SNOW_CLEARANCE_AT_SUB-ZERO_TEMPERATURES#fullTextFileContent",
+    "url_label": "Article"
+  },
+{
+    "date": "2026-06-15",
+    "text": "Jane presented recent research at the Example International Conference.",
     "image": "",
-    "gif": ""
+    "gif": "",
+    "url": "https://example.com",
+    "url_label": "Conference website"
   }
 ]

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects · CEng Mech</title>
+  <meta name="description" content="Projects – Chartered Mechanical Engineer" />
+  <!-- Font Awesome 6 (free) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <!-- Main stylesheet (matching your site) -->
+  <link rel="stylesheet" href="../site/styles.css" />
+  <style>
+    /* keep consistent with services page styling */
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0 1rem;
+    }
+    .project-card {
+      background: var(--bg-card, #ffffff);
+      border-radius: 1.2rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.03), 0 2px 6px rgba(0,0,0,0.05);
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      border: 1px solid var(--border-light, #eaeef2);
+      display: flex;
+      flex-direction: column;
+    }
+    .project-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 32px rgba(0,0,0,0.07);
+    }
+    .project-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      background: #eef3f7;
+      display: block;
+    }
+    .project-card .card-body {
+      padding: 1.5rem 1.5rem 1.8rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .project-card h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin: 0 0 0.6rem;
+      line-height: 1.4;
+    }
+    .project-card p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: var(--text-muted, #3a4a5a);
+      flex: 1;
+      margin: 0 0 1.2rem;
+    }
+    .project-card .btn-outline {
+      align-self: flex-start;
+      background: transparent;
+      border: 1.5px solid var(--accent, #1e5f8e);
+      color: var(--accent, #1e5f8e);
+      padding: 0.4rem 1.4rem;
+      border-radius: 40px;
+      font-weight: 500;
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .project-card .btn-outline i {
+      font-size: 0.8rem;
+    }
+    .project-card .btn-outline:hover {
+      background: var(--accent, #1e5f8e);
+      color: white;
+      border-color: var(--accent, #1e5f8e);
+    }
+    .project-card .badge-id {
+      display: inline-block;
+      background: var(--accent-soft, #d9e6f2);
+      color: var(--accent-dark, #0a3147);
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 0.15rem 0.9rem;
+      border-radius: 20px;
+      letter-spacing: 0.3px;
+      margin-bottom: 0.7rem;
+      align-self: flex-start;
+    }
+    .hero .tag i {
+      margin-right: 6px;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: 600;
+      margin: 0.2rem 0 0.2rem;
+    }
+    .project-list {
+      margin: 1rem 0 2rem;
+    }
+    .loading-placeholder {
+      text-align: center;
+      padding: 3rem 0;
+      color: var(--text-muted, #4a5a6a);
+      font-size: 1.1rem;
+    }
+    .loading-placeholder i {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      display: block;
+      opacity: 0.5;
+    }
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 2.2rem; }
+      .project-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <!-- topbar: matches data-site-nav -->
+  <nav class="topbar" data-site-nav></nav>
+
+  <!-- hero header -->
+  <header class="hero">
+    <div class="container">
+      <p class="tag"><i class="fas fa-code-branch"></i> Page</p>
+      <h1>Projects</h1>
+      <p style="font-size: 1.1rem; margin-top: 0.2rem; opacity: 0.8;">Research, feasibility, and engineering innovation</p>
+    </div>
+  </header>
+
+  <!-- main content: dynamic project list -->
+  <main class="container">
+    <section class="project-list" id="projectsList" aria-live="polite">
+      <!-- loading state (will be replaced) -->
+      <div class="loading-placeholder" id="loadingIndicator">
+        <i class="fas fa-spinner fa-pulse"></i>
+        Loading projects…
+      </div>
+      <!-- grid container for cards -->
+      <div class="project-grid" id="projectGrid" style="display: none;"></div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="site-footer" data-site-footer></footer>
+
+  <!-- scripts -->
+  <script src="../site/script.js"></script>
+  <!-- projects.js will be loaded after inline script, but we embed logic here for clarity -->
+  <script>
+    (function() {
+      // ----- navigation / footer fallback (same as services page) -----
+      function initNavFooter() {
+        const nav = document.querySelector('[data-site-nav]');
+        const footer = document.querySelector('[data-site-footer]');
+        if (nav && !nav.innerHTML.trim()) {
+          nav.innerHTML = `
+            <div class="container" style="display:flex; justify-content:space-between; align-items:center; padding:0.7rem 0;">
+              <div style="font-weight:600; font-size:1.2rem;"><i class="fas fa-cogs" style="margin-right:8px;"></i>CEng Mech</div>
+              <div style="display:flex; gap:1.8rem;">
+                <a href="#" style="text-decoration:none; color:inherit;">Home</a>
+                <a href="#" style="text-decoration:none; color:inherit; font-weight:500;">Projects</a>
+                <a href="#" style="text-decoration:none; color:inherit;">Services</a>
+                <a href="#" style="text-decoration:none; color:inherit;">Contact</a>
+              </div>
+            </div>
+          `;
+        }
+        if (footer && !footer.innerHTML.trim()) {
+          footer.innerHTML = `
+            <div class="container" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; padding:1.8rem 0; border-top:1px solid #dce4ec; margin-top:1.5rem;">
+              <span style="opacity:0.7;">&copy; 2026 · Chartered Mechanical Engineer</span>
+              <span style="opacity:0.7;">
+                <i class="fab fa-linkedin" style="margin-right:12px;"></i>
+                <i class="fab fa-github" style="margin-right:12px;"></i>
+                <i class="fab fa-x-twitter"></i>
+              </span>
+            </div>
+          `;
+        }
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initNavFooter);
+      } else {
+        initNavFooter();
+      }
+
+      // ----- Load projects from embedded JSON (your data) -----
+      const projectsData = [
+        {
+          "id": "project-example-one",
+          "title": "Technoeconomic Analysis of Mechanized Multilevel Car Parking for Hospital Setting in Kashmir",
+          "summary": "A concise description of the research question, method, and intended impact of this project.",
+          "image": "assets/images/project-placeholder.svg",
+          "image_alt": "Example Research Project placeholder image",
+          "url": "pages/projects/project-example-one.html"
+        },
+        {
+          "id": "project-example-two",
+          "title": "Economic Feasibility of Replacement of Traditional Central Heating System with Heat Pumps in a Hospital Setting",
+          "summary": "A second example showing how to describe collaborative or interdisciplinary research.",
+          "image": "assets/images/project-placeholder.svg",
+          "image_alt": "Example Collaborative Project placeholder image",
+          "url": "pages/projects/project-example-two.html"
+        }
+      ];
+
+      const grid = document.getElementById('projectGrid');
+      const loading = document.getElementById('loadingIndicator');
+
+      function renderProjects() {
+        if (!grid) return;
+        // hide loading, show grid
+        if (loading) loading.style.display = 'none';
+        grid.style.display = 'grid';
+
+        // clear any existing cards (just in case)
+        grid.innerHTML = '';
+
+        if (!projectsData || projectsData.length === 0) {
+          grid.innerHTML = `<p style="grid-column:1/-1; text-align:center; padding:2rem 0; color:var(--text-muted);">No projects available.</p>`;
+          return;
+        }
+
+        projectsData.forEach(proj => {
+          const card = document.createElement('div');
+          card.className = 'project-card';
+
+          // image
+          const img = document.createElement('img');
+          img.src = proj.image || 'assets/images/project-placeholder.svg';
+          img.alt = proj.image_alt || proj.title || 'Project image';
+          // if image fails, keep placeholder style
+          img.onerror = function() {
+            this.style.background = '#eef3f7';
+            this.style.display = 'flex';
+            this.style.alignItems = 'center';
+            this.style.justifyContent = 'center';
+            this.alt = 'Image not found';
+          };
+          card.appendChild(img);
+
+          // body
+          const body = document.createElement('div');
+          body.className = 'card-body';
+
+          // badge with id
+          const badge = document.createElement('span');
+          badge.className = 'badge-id';
+          badge.textContent = proj.id || 'project';
+          body.appendChild(badge);
+
+          // title
+          const title = document.createElement('h3');
+          title.textContent = proj.title || 'Untitled project';
+          body.appendChild(title);
+
+          // summary
+          const summary = document.createElement('p');
+          summary.textContent = proj.summary || 'No summary provided.';
+          body.appendChild(summary);
+
+          // link button
+          const link = document.createElement('a');
+          link.className = 'btn-outline';
+          link.href = proj.url || '#';
+          link.innerHTML = `<i class="fas fa-arrow-right"></i> View project`;
+          // if url is '#', maybe disable?
+          if (proj.url === '#') {
+            link.style.opacity = '0.6';
+            link.style.pointerEvents = 'none';
+          }
+          body.appendChild(link);
+
+          card.appendChild(body);
+          grid.appendChild(card);
+        });
+      }
+
+      // render after a tiny delay to ensure DOM is ready (and nav/footer are in place)
+      if (document.readyState === 'complete' || document.readyState === 'interactive') {
+        renderProjects();
+      } else {
+        document.addEventListener('DOMContentLoaded', renderProjects);
+      }
+    })();
+  </script>
+  <!-- if you have a separate projects.js, you can include it, but we have all logic above -->
+  <!-- <script src="../site/projects.js"></script> -->
+</body>
+</html>

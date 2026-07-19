@@ -4,15 +4,15 @@
     "entries": [
       {
         "title": "Doctoral Researcher",
-        "organization": "Example University",
-        "dates": "Sep 2024 - Present",
+        "organization": "Indian INstitute of Technology Bombay",
+        "dates": "Aug 2020 - Present",
         "logo": "assets/images/institution-placeholder.svg",
         "logo_alt": "Example University logo placeholder",
-        "flag": "GB-ENG",
+        "flag": "GB-IN",
         "flag_alt": "Country flag",
         "bullets": [
-          "Researching an example topic in the Example Research Group.",
-          "Developing methods for an example application and collaborating with domain experts."
+          "Researching Winter Road Maintenance Policy in the ADCPS.",
+          "Developing methods for an policy improvements and collaborating with domain experts."
         ]
       },
       {

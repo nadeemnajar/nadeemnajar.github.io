@@ -4,7 +4,7 @@
     "entries": [
       {
         "title": "Doctoral Researcher",
-        "organization": "Indian INstitute of Technology Bombay",
+        "organization": "Indian Institute of Technology Bombay",
         "dates": "Aug 2020 - Present",
         "logo": "assets/images/institution-placeholder.svg",
         "logo_alt": "Example University logo placeholder",
@@ -21,7 +21,7 @@
         "dates": "Jun 2023 - Aug 2024",
         "logo": "assets/images/institution-placeholder.svg",
         "logo_alt": "Example Research Institute logo placeholder",
-        "flag": "US",
+        "flag": "IN",
         "flag_alt": "Country flag",
         "bullets": [
           "Supported an interdisciplinary research project.",

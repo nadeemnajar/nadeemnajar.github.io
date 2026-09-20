@@ -75,12 +75,12 @@
     "title": "Honors and Awards",
     "entries": [
       {
-        "title": "Example Academic Award",
-        "organization": "Example Professional Society",
-        "dates": "May 2025",
+        "title": "Road Safety Award",
+        "organization": "Ministry of Road Transport and Highways, GoI",
+        "dates": "October 2004",
         "logo": "assets/images/institution-placeholder.svg",
         "logo_alt": "Awarding organization logo placeholder",
-        "flag": "GB-ENG",
+        "flag": "IN",
         "flag_alt": "Country flag"
       }
     ]

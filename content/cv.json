@@ -65,7 +65,7 @@
         "organization": "RGTU Bhopal",
         "dates": "2011 - 2013",
         "logo": "assets/images/rgpvlogo.png",
-        "logo_alt": "Example University logo placeholder",
+        "logo_alt": "RGTU Bhopal",
         "flag": "IN",
         "flag_alt": "Country flag"
       }
@@ -78,8 +78,8 @@
         "title": "Road Safety Award",
         "organization": "Ministry of Road Transport and Highways, GoI",
         "dates": "October 2004",
-        "logo": "assets/images/institution-placeholder.svg",
-        "logo_alt": "Awarding organization logo placeholder",
+        "logo": "assets/images/morth.png",
+        "logo_alt": "Ministry of Road Transport and Highways, GoI",
         "flag": "IN",
         "flag_alt": "Country flag"
       }
